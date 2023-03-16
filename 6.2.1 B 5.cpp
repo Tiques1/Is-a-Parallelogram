@@ -22,9 +22,7 @@ double InOut(string var, bool input) {
 }
 bool CheckOut(double A[], double B[], double C[], double D[]) {
 	if (LengthBtwPoints(A, B) == LengthBtwPoints(C, D) && AngularCoeff(A, B) == AngularCoeff(C, D)) {
-		if (LengthBtwPoints(B, C) == LengthBtwPoints(A, D) && AngularCoeff(B, C) == AngularCoeff(A, D)) {
-			return true;
-		}
+		return true;
 	}
 	return false;
 }
